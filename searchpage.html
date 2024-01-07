@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Manga</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="searchpage.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+
+    <style>
+        header {
+          width: 100%; 
+          background-color: #343a40; 
+          padding: 15px; 
+        }
+  
+        .navbar {
+          border-radius: 0; 
+        }
+  
+        section {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+  
+        .navbar-toggler-icon { 
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+        }
+      </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+          <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="index.html">WinMangaDesu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="searchpage.html">Search Manga</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="aboutmepage.html">About Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+    
+        <section>
+            <div class="input-box">
+                <i class="uil uil-search"></i>
+                <input type="text" id="search-manga-genre" placeholder="Search Manga/Genre" />
+                <button class="button" id="button">Search
+                    <div class="spinner-border spinner-grow-sm text-light" role="status" id="spinner-border">
+                        <span class="visually-hidden">loading</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <section id="manga-catalog">
+          <h2>Manga List</h2>
+        
+          <div class="manga-list">
+        
+            <div class="manga-card">
+              <a href="manga1.html">
+              <img src="gambar/Cover/bleklover.jpg">
+              <h3>Black Clover</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 7.86</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Action</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Fantasy</span>
+                  <span class="genre">Magic</span>
+                  <span class="genre">Shounen</span>
+                </div>
+              </div>
+              </a>
+            </div>
+        
+            <div class="manga-card">
+              <a href="manga2.html">
+              <img src="gambar/Cover/drstone.jpg">
+              <h3>Dr. Stone</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.2</span>  
+                <div class="genres">
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Award Winning</span>
+                  <span class="genre">Sci-Fi</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Science Fiction</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga3.html">
+              <img src="gambar/Cover/frierencover.jpg">
+              <h3>Sousou no Frieren</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 7.8</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Award Winning</span>
+                  <span class="genre">Drama</span>
+                  <span class="genre">Fantasy</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga4.html">
+              <img src="gambar/Cover/hajimenoippo.jpg">
+              <h3>Hajime no Ippo</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.73</span>  
+                <div class="genres">
+                  <span class="genre">Award Winning</span>
+                  <span class="genre">Sports</span>
+                  <span class="genre">Shounen</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga5.html">
+              <img src="gambar/Cover/jjkcover.jpg">
+              <h3>Jujutsu Kaisen</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.53</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Dark Fantasy</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga6.html">
+              <img src="gambar/Cover/kagurabachi.png">
+              <h3>Kagurabachi</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 7.86</span>  
+                <div class="genres">
+                  <span class="genre">Action</span>
+                  <span class="genre">Fiction</span>
+                  <span class="genre">Thriller</span>
+                  <span class="genre">Gore</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga7.html">
+              <img src="gambar/Cover/konoototomare.jpg">
+              <h3>Kono Oto Tomare!</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.69</span>  
+                <div class="genres">
+                  <span class="genre">Drama</span>
+                  <span class="genre">Music</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Shounen</span>
+                  <span class="genre">Romance</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga8.html">
+              <img src="gambar/Cover/Kubosan.jpg">
+              <h3>Kubo-san wa Mob wo Yurusanai</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 7.91</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Romance</span>
+                  <span class="genre">School</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga9.html">
+              <img src="gambar/Cover/haikyuu.png">
+              <h3>Haikyuu!!</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.85</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Drama</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Shounen</span>
+                  <span class="genre">Sports</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga10.html">
+              <img src="gambar/Cover/opm.jpg">
+              <h3>One-Punch Man</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.74</span>  
+                <div class="genres">
+                  <span class="genre">Action</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Parody</span>
+                  <span class="genre">Sci-Fi</span>
+                  <span class="genre">Seinen</span>
+                  <span class="genre">Super Power</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga11.html">
+              <img src="gambar/Cover/saikikusuo.jpg">
+              <h3>Saiki Kusuo no Ψ-nan</h3>
+        
+              <div class="manga-details">
+                <span>&#9733; 8.30</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Shounen</span>
+                  <span class="genre">Slice of Life</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="manga-card">
+              <a href="manga12.html">
+              <img src="gambar/Cover/sukinakogamegane.jpg">
+              <h3>Suki na Ko ga Megane wo Wasureta</h3>
+        
+              <div class="manga-details">
+                <span> &#9733; 8.06</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Romance</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Slice of Life</span>
+                  <span class="genre">Shounen</span>
+                </div>
+              </div>
+              </a>
+            </div>
+        
+          </div>
+
+          <div id="not-found-message" style="display: none; font-size: 24px; margin-top: 100px; margin-bottom: 100px;">
+            <h1>Manga Not Found!</h1>
+          </div>
+
+        </section>
+    
+        <footer>
+          <div class="footer-content">
+    
+            <div class="logo">
+              <a class="navbar-brand text-light" href="#">WinMangaDesu</a>
+            </div>
+        
+            <div class="links-sosmed">
+              <div class="logo">
+                <img src="gambar/Logo/wasapwarna.png" alt="WhatsApp">
+              </div>
+              <a href="https://www.whatsapp.com/">WhatsApp</a>
+            </div>
+    
+            <div class="links-sosmed">
+              <div class="logo">
+                <img src="gambar/Logo/instagramwarna.png" alt="WhatsApp">
+              </div>
+              <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+    
+            <div class="links-sosmed">
+              <div class="logo">
+                <img src="gambar/Logo/githubwarna.png" alt="WhatsApp">
+              </div>
+              <a href="https://github.com/">GitHub</a>
+            </div>
+            
+            <div class="kopirek">  
+              &copy; 2024 WinMangaDesu. All Rights Reserved.
+            </div>
+        
+          </div>
+        </footer>
+      </div>
+  
+      <script src="main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+      <script>
+        
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="homecss.css">
+
+    <style>
+      header {
+        width: 100%; 
+        background-color: #343a40; 
+        padding: 15px; 
+      }
+
+      .navbar {
+        border-radius: 0; 
+      }
+
+      section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .navbar-toggler-icon { 
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="index.html">WinMangaDesu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="searchpage.html">Search Manga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="aboutmepage.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="carousel-nya" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-nya" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-nya" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-nya" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active a-item">
+            <img src="gambar/jujutsu kaisen.jpg" class="d-block w-100 a-foto" alt="slide 1">
+            <div class="carousel-caption top-0 mt-5">
+              <h1 class="mt-5">RECOMMENDATION</h1>
+              <p>This Is TOP 3 Recommendation Manga From Me</p>
+              <a href="manga5.html" class="btn btn-outline-light">SEE IT!</a>
+            </div>
+          </div>
+          <div class="carousel-item a-item">
+            <img src="gambar/frieren.jpg" class="d-block w-100 a-foto" alt="slide 2">
+            <div class="carousel-caption top-0 mt-5">
+              <h1 class="mt-5">RECOMMENDATION</h1>
+              <p>This Is TOP 3 Recommendation Manga From Me</p>
+              <a href="manga3.html" class="btn btn-outline-light">SEE IT!</a>
+            </div>
+          </div>
+          <div class="carousel-item a-item">
+            <img src="gambar/blackclover.jpg" class="d-block w-100 a-foto" alt="slide 3">
+            <div class="carousel-caption top-0 mt-5">
+              <h1 class="mt-5">RECOMMENDATION</h1>
+              <p>This Is TOP 3 Recommendation Manga From Me</p>
+              <a href="manga1.html" class="btn btn-outline-light">SEE IT!</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-nya" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-nya" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/bleklover.jpg" class="card-img-top" alt="manga1">
+  <div class="card-body">
+    <h5 class="card-title">Black Clover</h5>
+    <span>&#9733; 7.86</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Action</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Fantasy</span>
+                  <span class="genre">Magic</span>
+                  <span class="genre">Shounen</span>
+                </div>
+    <a href="manga1.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/drstone.jpg" class="card-img-top" alt="manga2">
+  <div class="card-body">
+    <h5 class="card-title">Dr. Stone</h5>
+    <span>&#9733; 8.2</span>  
+                <div class="genres">
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Award Winning</span>
+                  <span class="genre">Sci-Fi</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Science Fiction</span>
+                </div>
+    <a href="manga2.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/frierencover.jpg" class="card-img-top" alt="manga3">
+  <div class="card-body">
+    <h5 class="card-title">Sousou no Frieren</h5>
+    <span>&#9733; 7.8</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Award Winning</span>
+                  <span class="genre">Drama</span>
+                  <span class="genre">Fantasy</span>
+                </div>
+    <a href="manga3.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/hajimenoippo.jpg" class="card-img-top" alt="manga4">
+  <div class="card-body">
+    <h5 class="card-title">Hajime no Ippo</h5>
+    <span>&#9733; 8.73</span>  
+    <div class="genres">
+      <span class="genre">Award Winning</span>
+      <span class="genre">Sports</span>
+      <span class="genre">Shounen</span>
+    </div>
+    <a href="manga4.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/jjkcover.jpg" class="card-img-top" alt="manga5">
+  <div class="card-body">
+    <h5 class="card-title">Jujutsu Kaisen</h5>
+    <span>&#9733; 8.53</span>  
+                <div class="genres">
+                  <span class="genre">TOP #3</span>
+                  <span class="genre">Adventure</span>
+                  <span class="genre">Dark Fantasy</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+    <a href="manga5.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/konoototomare.jpg" class="card-img-top" alt="manga6">
+  <div class="card-body">
+    <h5 class="card-title">Kono Oto Tomare!</h5>
+    <span>&#9733; 8.69</span>  
+                <div class="genres">
+                  <span class="genre">Drama</span>
+                  <span class="genre">Music</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Shounen</span>
+                  <span class="genre">Romance</span>
+                </div>
+    <a href="manga7.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/Kubosan.jpg" class="card-img-top" alt="manga7">
+  <div class="card-body">
+    <h5 class="card-title">Kubo-san wa Mob wo Yurusanai</h5>
+    <span>&#9733; 7.91</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Romance</span>
+                  <span class="genre">School</span>
+                </div>
+    <a href="manga8.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/opm.jpg" class="card-img-top" alt="manga8">
+  <div class="card-body">
+    <h5 class="card-title">One-Punch Man</h5>
+    <span>&#9733; 8.74</span>  
+                <div class="genres">
+                  <span class="genre">Action</span>
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Parody</span>
+                  <span class="genre">Sci-Fi</span>
+                  <span class="genre">Seinen</span>
+                  <span class="genre">Super Power</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+    <a href="manga10.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/saikikusuo.jpg" class="card-img-top" alt="manga9">
+  <div class="card-body">
+    <h5 class="card-title">Saiki Kusuo no Ψ-nan</h5>
+    <span>&#9733; 8.30</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Shounen</span>
+                  <span class="genre">Slice of Life</span>
+                  <span class="genre">Supernatural</span>
+                </div>
+    <a href="manga11.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/sukinakogamegane.jpg" class="card-img-top" alt="manga10">
+  <div class="card-body">
+    <h5 class="card-title">Suki na Ko ga Megane wo Wasureta</h5>
+    <span> &#9733; 8.06</span>  
+                <div class="genres">
+                  <span class="genre">Comedy</span>
+                  <span class="genre">Romance</span>
+                  <span class="genre">School</span>
+                  <span class="genre">Slice of Life</span>
+                  <span class="genre">Shounen</span>
+                </div>
+    <a href="manga12.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/kagurabachi.png" class="card-img-top" alt="manga11">
+  <div class="card-body">
+    <h5 class="card-title">Kagurabachi</h5>
+    <span>&#9733; 7.86</span>  
+                <div class="genres">
+                  <span class="genre">Action</span>
+                  <span class="genre">Fiction</span>
+                  <span class="genre">Thriller</span>
+                  <span class="genre">Gore</span>
+                </div>
+    <a href="manga6.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mx-auto text-white bg-dark">
+  <img src="gambar/Cover/haikyuu.png" class="card-img-top" alt="manga12">
+  <div class="card-body">
+    <h5 class="card-title">Haikyuu!!</h5>
+    <span>&#9733; 8.85</span>  
+    <div class="genres">
+      <span class="genre">Comedy</span>
+      <span class="genre">Drama</span>
+      <span class="genre">School</span>
+      <span class="genre">Shounen</span>
+      <span class="genre">Sports</span>
+    </div>
+    <a href="manga9.html" class="btn btn-outline-light btn-lg btn-block">SEE IT!</a>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="visually-hidden">Previous</span>
+          <p><=</p>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="visually-hidden">Next</span> 
+          <p>=></p>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+
+        <div class="logo">
+          <a class="navbar-brand text-light" href="#">WinMangaDesu</a>
+        </div>
+    
+        <div class="links-sosmed">
+          <div class="logo">
+            <img src="gambar/Logo/wasapwarna.png" alt="WhatsApp">
+          </div>
+          <a href="https://www.whatsapp.com/">WhatsApp</a>
+        </div>
+
+        <div class="links-sosmed">
+          <div class="logo">
+            <img src="gambar/Logo/instagramwarna.png" alt="WhatsApp">
+          </div>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <div class="links-sosmed">
+          <div class="logo">
+            <img src="gambar/Logo/githubwarna.png" alt="WhatsApp">
+          </div>
+          <a href="https://github.com/">GitHub</a>
+        </div>
+        
+        <div class="kopirek">  
+          &copy; 2024 WinMangaDesu. All Rights Reserved.
+        </div>
+    
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

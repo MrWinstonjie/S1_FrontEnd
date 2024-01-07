@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #343a40;
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(to right, white, gray);
+  }
+
+.navbar {
+    animation: fadeInDown 1s; 
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -50%, 0);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 50%, 0);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.nav-link {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: fontku;
+    src: url(Font/Kamikaze.ttf);
+    src: url(Font/Kamikaze-Italic.ttf);
+}
+
+.navbar-brand {
+    font-family: fontku;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .info-section img {
+    width: 30%;
+    height: 50%;
+    
+    border-radius: 8px;
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+
+
+  @media (max-width: 768px) {
+    .info-section img {
+      width: 50%; 
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .info-section img {
+      width: 50%;
+    height: 50%;
+    } 
+  }
+
+  .info-content h2 {
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+  
+  .info-content {
+    flex: 1; 
+    width: 100%;
+    padding: 10px;
+    background-color: #4e4848;
+    border: 1px solid #333; 
+    border-radius: 8px;
+    box-sizing: border-box; 
+    margin-left: 30px;
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+  
+  .info-content h2, .info-content p {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .manga-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+
+  .info-content p {
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-1%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .manga-details span {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .genre {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-content {
+        width: calc(100% - 10px); 
+        margin-top: 20px;
+        margin-left: 0; 
+    }
+  }
+
+  hr {
+    color: #ffffff;
+    animation: fadeInLeft 1s ease-in-out;
+    animation-delay: 0s; 
+  }
+
+  
+  
+footer {
+    background: #121212;
+    color: #fff;
+    padding: 3rem;
+    animation: fadeInUp 1s; 
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .links-sosmed a {
+    color: #fff;
+    padding: 0 1rem;
+    display: flex;
+  }
+  
+  .kopirek {
+    opacity: 0.8;  
+    display: flex;
+  }
+
+  .links-sosmed {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links-sosmed .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .links-sosmed .logo img {
+    height: 50px;
+    display: flex;
+  }
+
+@media (max-width: 576px) {
+    .footer-content {
+      flex-direction: column;
+    } 
+  }
+  
+  @media (min-width: 768px) {
+    .footer-content { 
+      flex-wrap: nowrap;
+    }
+  }

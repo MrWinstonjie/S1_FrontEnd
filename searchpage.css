@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #343a40;
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to right, white, gray);
+}
+
+.navbar {
+  animation: fadeInDown 1s; 
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.nav-link {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: fontku;
+    src: url(Font/Kamikaze.ttf);
+    src: url(Font/Kamikaze-Italic.ttf);
+}
+
+.navbar-brand {
+    font-family: fontku;
+}
+
+.input-box{
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: #121212;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0,1);
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in-down 1s ease-in-out;
+}
+
+.input-box i,
+.input-box .button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box i{
+    left: 20px;
+    font-size: 30px;
+    color: rgb(240, 234, 234);
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+}
+
+.input-box .button{
+  display: none;
+}
+
+.input-box .button:active{
+    transform: translateY(-50%) scale(1.02);
+}
+
+@media screen and (max-width:500px){
+    .input-box{
+        height: 66px;
+        margin: 0 8px;
+    }
+    .input-box i{
+        left: 12px;
+        font-size: 25px;
+    }
+    .input-box input{
+        padding: 0 112px 0 50px;
+    }
+    .input-box .button{
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+.input-box input {
+    color: #fff;
+  }
+  
+.spinner-border{
+    display: none;
+}
+
+#manga-catalog {
+  padding: 40px; 
+}
+
+#manga-catalog h2 {
+  text-align: center;
+  margin-bottom: 30px; 
+  color: white;
+  animation: zoom-in 1s ease-in-out;
+}
+
+.manga-list {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.manga-card {
+  width: 300px;
+  margin: 1%;
+  text-align: center;
+  background-color: #212529;
+  border: 1px solid #212529;
+  border-radius: 5px; 
+  overflow: hidden;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+@media (max-width: 600px) {
+  .manga-card {
+    padding: 10px;
+  }
+  .manga-card img {
+    height: 100px;  
+    object-fit: cover;
+    margin-top: 12px;  
+    border-radius: 5px;
+  }
+}
+
+.manga-card img {
+  height: 300px;  
+  object-fit: cover;
+  margin-top: 12px;  
+  border-radius: 5px;
+}
+
+.manga-card h3 {
+  text-align: center;
+  width: 100%;
+  white-space: normal;
+  color: white;
+  
+}
+
+@media (min-width: 768px) {
+
+  .manga-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .genres {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (min-width: 500px) {
+
+  .manga-card h3 {
+    -webkit-line-clamp: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .manga-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+}
+
+body:before {
+  content: '';
+  animation: load 1s; 
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+     transform: translateX(-100%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.manga-card {
+  animation: slideIn 1s ease forwards; 
+}
+
+.manga-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 20px rgb(247, 245, 245); 
+  transition: all 0.3s;
+}
+
+.manga-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;  
+}
+
+.manga-details span {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px; 
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.genres {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-lines: 2;
+}
+
+@media (min-width: 768px) {
+  .genres {
+    max-lines: 1;
+  }
+}
+
+.genre {
+  margin-right: 10px;
+  white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+  .manga-card {
+    width: 45%;
+  }
+}
+
+
+
+@media (max-width: 280px) {
+
+  #manga-catalog {
+    padding: 20px;
+  }
+
+  .manga-card img {
+    height: 200px;  
+    object-fit: cover;
+    margin-top: 12px;  
+    border-radius: 5px;
+  }
+
+  .manga-list {
+    justify-content: center; 
+  }
+
+  .manga-card {
+    width: 80%;
+    margin: 5% 0; 
+  }
+
+  .manga-card h3 {
+    font-size: 14px;
+  }
+  
+  .manga-details span,
+  .genre {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 653px) {
+
+  #manga-catalog h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 370px) {
+  .manga-card h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .manga-card h3 {
+    font-size: 16px; 
+  }
+  .manga-card {
+    width: 100%;  /* Ubah nilai lebar kartu agar penuh di layar kecil */
+    margin: 5% 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .genre {
+    font-size: 10px;
+  }  
+}
+
+@media (max-width: 750px) {
+  .genre {
+    font-size: 12px;
+  }
+}
+
+.genres {
+  flex-wrap: wrap;
+  max-lines: 2;  
+}
+
+@media (max-width: 370px) {
+  .genre {
+    margin-right: 5px; 
+  }
+}
+
+@media (max-width: 750px) {
+  .genre {
+    margin-right: 8px;
+  }  
+}
+
+#not-found-message {
+  display: none; 
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+    background: #121212;
+    color: #fff;
+    padding: 3rem;
+    animation: fadeInLeft 1s;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .links-sosmed a {
+    color: #fff;
+    padding: 0 1rem;
+    display: flex;
+  }
+  
+  .kopirek {
+    opacity: 0.8;  
+    display: flex;
+  }
+
+  .links-sosmed {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+  }
+  
+  .links-sosmed .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .links-sosmed .logo img {
+    height: 50px;
+    display: flex;
+  }
+
+@media (max-width: 576px) {
+    .footer-content {
+      flex-direction: column;
+    } 
+  }
+  
+@media (min-width: 768px) {
+    .footer-content { 
+      flex-wrap: nowrap;
+    }
+  }
+
+  
