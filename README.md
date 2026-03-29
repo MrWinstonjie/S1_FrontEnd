@@ -1,4 +1,4 @@
-# Portofolio Front-End S1
+# Portofolio Front-End Website Manga
 
 Repositori ini berisi proyek pengembangan front-end untuk wensite manga. Proyek ini menampilkan kemampuan saya dalam membangun antarmuka web yang bersih dan responsif.
 
